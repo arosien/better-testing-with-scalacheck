@@ -1,0 +1,1 @@
+# better-testing-with-scalacheck
