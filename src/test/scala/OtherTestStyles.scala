@@ -1,4 +1,3 @@
-import org.scalacheck._
 import org.scalatest._
 
 class TraditionalTest extends FunSuite {
@@ -30,16 +29,4 @@ trait Fixture {
     ("able was i ere i saw elba",     "able",    "elba") ::
     ("connect the dots, la la la la", "connect", "la la") ::
     Nil
-}
-
-class PropertyBasedTest extends Properties("String") {
-  property("startsWith") =
-    Prop.forAll { (prefix: String, suffix: String) =>
-      (prefix + suffix).startsWith(prefix)
-    }
-
-  property("endsWith") =
-    Prop.forAll { (prefix: String, suffix: String) =>
-      (prefix + suffix).endsWith(suffix)
-    }
 }
