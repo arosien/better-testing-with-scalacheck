@@ -2,7 +2,7 @@ package stateful
 
 import org.scalacheck._
 import org.scalacheck.commands.Commands
-import scala.util.{Try, Success}
+import scala.util._
 
 object CounterProperties extends Properties("Counter") {
   property("commands") = CounterSpecification.property()
