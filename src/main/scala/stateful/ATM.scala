@@ -41,7 +41,7 @@ class MutableATM(passwords: Map[User, Password], initialBalances: Map[User, Amou
         val result = actualPass == pass
 
         // WARNING: mutation!
-        // if (result) authorized = authorized + user
+        if (result) authorized = authorized + user
 
         result
       }
