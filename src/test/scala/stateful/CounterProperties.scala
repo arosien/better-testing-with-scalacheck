@@ -34,39 +34,32 @@ object CounterSpecification extends Commands {
   def genCommand(state: State): Gen[Command] = Gen.oneOf(Inc, Get, Dec, Reset)
 
   case object Inc extends UnitCommand {
-    def run(sut: Sut): Unit = sut.inc
-    def nextState(state: State): State = state + 1
-    def preCondition(state: State): Boolean = true
-
-    // why don't we check the state here? because the user can't either
-    def postCondition(state: State, success: Boolean): Prop = success
+    def run(sut: Sut): Unit = ???
+    def nextState(state: State): State = ???
+    def preCondition(state: State): Boolean = ???
+    def postCondition(state: State, success: Boolean): Prop = ???
   }
 
   case object Dec extends UnitCommand {
-    def run(sut: Sut): Unit = sut.dec
-    def nextState(state: State): State = state - 1
-    def preCondition(state: State): Boolean = true
-
-    // why don't we check the state here? because the user can't either
-    def postCondition(state: State, success: Boolean): Prop = success
+    def run(sut: Sut): Unit = ???
+    def nextState(state: State): State = ???
+    def preCondition(state: State): Boolean = ???
+    def postCondition(state: State, success: Boolean): Prop = ???
   }
 
   case object Reset extends UnitCommand {
-    def run(sut: Sut): Unit = sut.reset
-    def nextState(state: State): State = 0
-    def preCondition(state: State): Boolean = true
-
-    // why don't we check the state here? because the user can't either
-    def postCondition(state: State, success: Boolean): Prop = success
+    def run(sut: Sut): Unit = ???
+    def nextState(state: State): State = ???
+    def preCondition(state: State): Boolean = ???
+    def postCondition(state: State, success: Boolean): Prop = ???
   }
 
   case object Get extends Command {
     type Result = Int
 
-    def run(sut: Sut): Result = sut.get
-    def nextState(state: State): State = state
-    def preCondition(state: State): Boolean = true
-    def postCondition(state: State, result: Try[Result]): Prop =
-      s"result ${result} != state Success($state)" |: result == Success(state)
+    def run(sut: Sut): Result = ???
+    def nextState(state: State): State = ???
+    def preCondition(state: State): Boolean = ???
+    def postCondition(state: State, result: Try[Result]): Prop = ???
   }
 }
