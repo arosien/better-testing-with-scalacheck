@@ -2,13 +2,10 @@
 
 Check out the repo:
 
-    ```
     $ git clone git@github.com:arosien/better-testing-with-scalacheck.git
-    ```
 
 Make sure everything compiles and runs:
 
-    ```
     $ cd better-testing-with-scalacheck
 
     $ sbt test
@@ -19,7 +16,6 @@ Make sure everything compiles and runs:
     [error]   simple.StringProperties
     [error]   stateful.CounterProperties
     [error] (test:test) sbt.TestsFailedException: Tests unsuccessful
-    ```
 
 **It's ok that the tests fail, we haven't written them all yet!**
 
