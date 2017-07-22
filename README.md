@@ -25,6 +25,7 @@ Libraries:
 
  * [ScalaCheck](https://github.com/rickynils/scalacheck)
    * [ScalaCheck API](http://scalacheck.org/files/scalacheck_2.11-1.13.4-api/index.html)
+   * [Using ScalaCheck in ScalaTest](http://www.scalatest.org/user_guide/property_based_testing)
  * [scalaprops](https://github.com/scalaprops/scalaprops)
  * [Nyaya](https://github.com/japgolly/nyaya/)
    * [japgolly/test-state](https://github.com/japgolly/test-state)
